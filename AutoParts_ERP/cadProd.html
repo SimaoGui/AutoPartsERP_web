@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="cadProd.css">
+    <link rel="stylesheet" href="loader.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="cadProd.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="divbar">
+            <div class="divbtn">
+                <ul class="divlist">
+                    <li class="divitem"><a href="#">Ver Produtos</a></li>
+                    <li class="divitem"><a href="#">Ver Marcas</a></li>
+                    <li class="divitem"><a href="cadProd.html">Cadastrar Produto</a></li>
+                    <li class="divitem"><a href="#">Cadastrar Marca</a></li>
+                </ul>
+            </div>
+            <div class="divexit">
+                <a href="index.html"><span>SAIR</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="mainDiv">
+            <div id="mainTitle">
+                <h1 id="title">Cadastrar Produtos</h1>
+            </div>
+            <div class="formDiv">
+                <form id="form" action="/Enviar_Dados" method="post">
+                    <div class="formGroup">
+                        <div class="divLayout">
+                            <label for="ID">Id</label>
+                            <input  type="number" id="ID" name="Id" placeholder="Insira o Id" required>
+                        </div>
+                    </div>
+                    <div class="formGroup">
+                        <div class="divLayout">
+                            <label for="Descrição">Descrição</label>
+                            <input  type="text" id="DESC" name="Descrição" placeholder="Insira a Descrição" required>
+                        </div>
+                    </div>
+                    <div class="formGroup">
+                        <div class="divLayout">
+                            <label for="Marca">Marca</label>
+                            <input  type="text" id="MARCA" name="Marca" placeholder="Insira a Marca" required>
+                        </div>
+                    </div>
+                    <div class="formGroup">
+                        <div class="divLayout">
+                            <label for="DataCreate">Criado Em</label>
+                            <input type="text" placeholder="Insira a Data" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'">
+                        </div>
+                    </div>
+                    <div class="formGroup">
+                        <div class="divLayout">
+                            <label for="DateAtt">Atualizado Em</label>
+                            <input type="text" placeholder="Insira a Data" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'">
+                        </div>
+                    </div>
+                    <div class="formGroupBtn">
+                        <div class="divLayoutBtn"></div>
+                            <button type="submit" id="btn">SALVAR</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
